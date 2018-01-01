@@ -2,6 +2,8 @@
 //code from Robojax
 //https://www.youtube.com/watch?v=AAiDwBKs9uE
 
+//---------------------------------------------------
+
 //We always have to include the library
 // Based on a project posted https://github.com/wayoda/LedControl
 #include "LedControl.h"
@@ -13,7 +15,7 @@
  pin 12 is connected to the DataIn 
  pin 11 is connected to the CLK 
  pin 10 is connected to CS
- We have only a single MAX72XX.
+ We have only a single MAX72XX, hence the final '1' after the '10'.
  */
 LedControl lc=LedControl(12,11,10,1);
 
