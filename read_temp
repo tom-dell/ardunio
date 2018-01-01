@@ -1,0 +1,36 @@
+//where the temp module is
+const int tempPin = 0;
+
+void setup()
+{
+  //start the serial output
+  Serial.begin(9600);
+}
+
+
+void loop()
+{
+  //define degreesC and voltage as float values
+  float voltage, degreesC;
+  
+  //going to define this later
+  voltage = getVoltage(tempPin);
+
+  //do math on the voltage to calculate temp in C
+  degreesC = (voltage - 0.5) * 10.0;
+
+  //print the temp
+  Serial.print ("temp: ");
+  Serial.println (degreesC);
+
+  //delay to make it cleaner
+  delay(1000);
+}
+
+
+//define the voltage module
+float getVoltage(int pin)
+{ 
+  return (analogRead(tempPin) * 0.004882814);
+}
+
