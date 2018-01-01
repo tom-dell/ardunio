@@ -1,3 +1,8 @@
+//credit goes to sparkfun
+//https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/experiment-7-reading-a-temperature-sensor
+
+//---------------------------------------------------
+
 //where the temp module is
 const int tempPin = 0;
 
